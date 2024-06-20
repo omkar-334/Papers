@@ -33,3 +33,6 @@ In both ex (·) and json (·) formats, the mean scores for the `rs` settings are
 For instance, in the `json (rs)` config using gpt-4-0613, the mean score is 5.34, while it drops to 3.26 in `json (sr)`, despite providing similar reasons.
 
 We conjecture that in the `rs` setting, the autoregressive nature of the model allows the score to be influenced by the  previously outputted reasons.
+
+However, when the ‘special rules’ were removed from the prompt, it was found that most scores were lower and the distinctions between
+different settings became less pronounced. This highlights the models’ sensitivity to the changes of the prompt.
